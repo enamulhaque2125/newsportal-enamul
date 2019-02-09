@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CNN News-Second Page</title>
+	<link rel="Shortcut Icon" href="img/logo.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<style>
+		
+			.navbar-header img {
+			height: 24px;
+		}
+		.footer ul li a{
+			color:#000;
+		}
+		.slide-content {
+			padding: 110px;
+			text-align: center;
+		}
+		.carousel-background{
+			background: url(img/img3.jpg);
+			background-size: 100% 100%;
+			background-attachment: fixed;
+		}
+		.footer ul{
+			border-right: 1px solid #fff;
+		}
+		.footer ul li{
+			display: block;
+			padding: 10px;
+		}
+		.footer ul li a{
+			color: #fff;
+			font-size: 15px;
+			font-weight: bolder;
+		}
+
+	</style>
+</head>
+	
+<body>
+	<div class="container-fluid">
+
+	<!-- navigation bar started here -->
+
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="navbar navbar-inverse">
+					<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+						<a href="" class="navbar-brand"><img src="img/logo.png"></a>
+					</div>
+				
+					<ul class="nav navbar-nav">
+						<li><a href="#" data-toggle="modal" data-target="#registration_modal"><span class="glyphicon glyphicon-user"></span> Registration</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#login_modal"><span class="glyphicon glyphicon-log-in"></span> Sign in</a></li>
+						<li><a href="world.html">World</a></li>
+						<li><a href="us politics.html">U.S. Politics</a></li>
+						<li><a href="business.html">Business</a></li>
+						<li><a href="entertainment.html">Entertainment</a></li>
+						<li><a href="sports.html">Sports</a></li>
+						<li><a href="travel.html">Travel</a></li>
+						<li><a href="style.html">Style</a></li>
+						<li><a href="health.html">Health</a></li>
+						<li><a href="video.html">Video</a></li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">More <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="culture.html">Culture</a></li>
+								<li><a href="feature.html">Feature</a></li>
+								<li><a href="sound.html">Sound</a></li>
+								<li><a href="tv.html">TV</a></li>
+								<li><a href="registration.html">Log In</a></li>
+								<li><a href="#">Log Out</a></li>
+							</ul>
+						</li>
+					</ul>
+					
+					<div class="navbar-right">
+						<form class="navbar-form">
+							<div class="input-group">
+								<input type="text" class="form-control">
+								<span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- navigation bar end here -->
+
+		
+				<h1>This is the second page</h1>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				<!-- modal section started here -->
+
+		<div class="modal fade"  id="login_modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+						<h3>Log In Now</h3>
+
+					</div>
+					<div class="modal-body">
+						<form action="profile.html" method="" id="loginForm">
+							<div class="input-group well">
+								<span class="input-group-addon"><span class="
+								glyphicon glyphicon-user"></span></span>
+								<input type="text" name="" placeholder="User name/Email Address" class="form-control" id="userName">
+								<span class="text-danger" id="userError"></span>
+							</div>
+							<div class="input-group well">
+								<span class="input-group-addon"><span class="
+								glyphicon glyphicon-lock"></span></span>
+								<input type="password" name="" placeholder="Password" class="form-control" id="psd">
+								<span id="psdError" class="text-danger"></span>
+							</div>
+							<div class=" well">
+								<button class="btn btn-success btn-block" type="submit">Login</button>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button class="close" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- modal section end here -->
+
+
+
+
+
+
+<!-- registration form start here -->
+
+
+
+			<div class="modal  fade"  id="registration_modal">
+			<div class="modal-dialog ">
+				<div class="modal-content ">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+						
+							<h3 class="text-center bg-info">Not yet register? Please Registration first!</h3>
+						
+
+					</div>
+					<div class="modal-body well">
+						<div class="row">
+							<div class="col-lg-12">
+								<form action="registration.html" method="" id="registration_form">
+									<div class="form-group">
+										<label for="#regFName" class="col-lg-3 control-label">First Name</label>
+										<div class="col-lg-9">
+											<input class="form-control" type="text" placeholder="Your first name" id="regFName">
+										</div>
+									</div><br><br><br>
+									<div class="form-group">
+										<label for="#regLName" class="col-lg-3 control-label">Last Name</label>
+										<div class="col-lg-9">
+											<input class="form-control" type="text" placeholder="Your last name" id="regLName">
+										</div>
+									</div><br><br>
+									<div class="form-group">
+										<label for="#regEmail" class="col-lg-3 label-control">E-mail</label>
+										<div class="col-lg-9">
+											<input class="form-control" type="email" placeholder="Your email" id="regEmail">
+										</div>
+									</div><br><br>
+									<div class="form-group">
+										<label for="#regPsd" class="col-lg-3 label-control">Password</label>
+										<div class="col-lg-9">
+											<input class="form-control" type="password" placeholder="Your password" id="regPsd">
+										</div>
+									</div><br><br>
+									<div class="form-group">
+										<label for="#regConPsd" class="col-lg-3 label-control">Confirm Password</label>
+										<div class="col-lg-9">
+											<input class="form-control" type="password" placeholder="Your password" id="regConPsd">
+										</div>
+									</div><br><br>
+									<div class="form-group">
+										<label for="#regNumber" class="col-lg-3 label-control">Contact</label>
+										<div class="col-lg-9">
+											<input class="form-control" type="number" placeholder="Your contact number" id="regNumber">
+										</div>
+									</div><br><br>
+									<div class="form-group">
+										<label for="#regGender" class="col-lg-3 label-control">Gender</label>
+										<div class="col-lg-9">
+											<input type="radio" value="Male" name="gender" > Male
+											<input type="radio" value="Female" name="gender" > Female
+											<input type="radio" value="Other" name="gender" > Other
+										</div>
+									</div><br><br>
+									<div class="form-group">
+										<label for="#regImg" class="col-lg-3 label-control">Choose Image</label>
+										<div class="col-lg-9">
+											<input class="" type="file" placeholder="Upload a image" id="regImg">
+										</div>
+									</div><br><br>
+									<div class="form-group">
+										<label for="#conAddress" class="col-lg-3 label-control">Address</label>
+										<div class="col-lg-9">
+											<textarea class="form-control" placeholder="Your address" rows="6" id="conAddress"></textarea>
+										</div>
+									</div><br><br>
+									
+									<div class="form-group">
+										<div class="col-lg-9 col-lg-offset-3">
+											<input type="submit" value="registration" class="btn btn-primary btn-block">
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="close" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>	
+
+
+
+
+
+
+		<!-- registration form end here -->
+
+
+
+		<!-- Footer section started here-->
+			
+			<div class="footer" style="background-color:#999;">
+				<div class="row">
+				<div class="col-lg-4">
+					<ul class="nav">
+						<li><a href="world.html">World</a></li>
+						<li><a href="us politics.html">U.S. Politics</a></li>
+						<li><a href="business.html">Business</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4">
+					<ul class="nav">
+						<li><a href="entertainment.html">Entertainment</a></li>
+						<li><a href="sports.html">Sports</a></li>
+						<li><a href="travel.html">Travel</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4">
+					<ul class="nav">
+						<li><a href="style.html">Style</a></li>
+						<li><a href="health.html">Health</a></li>
+						<li><a href="video.html">Video</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			</div>
+		
+		
+		<!-- Footer section end here -->
+
+
+	</div>
+
+
+	
+
+
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
